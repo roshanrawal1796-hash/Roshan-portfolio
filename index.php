@@ -1,0 +1,125 @@
+<?php
+echo "<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Roshan Rawal | Resume | BS CS MNSUET</title>
+<style>
+* {margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth}
+body {font-family: 'Segoe UI', sans-serif; background: #0a0a1a; color: white;}
+section {min-height: 100vh; padding: 80px 20px;}
+
+/* Hero */
+.hero {background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); display: flex; align-items: center; justify-content: center; text-align: center;}
+.glass-card {background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2); border-radius: 30px; padding: 60px 40px; max-width: 650px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);}
+img.profile {width: 200px; height: 200px; border-radius: 50%; border: 6px solid white; margin-bottom: 30px; box-shadow: 0 0 40px rgba(255,255,255,0.4);}
+.hero h1 {font-size: 3.5em; margin-bottom: 15px; text-shadow: 3px 3px 6px rgba(0,0,0,0.3);}
+.badge {background: rgba(255,255,255,0.15); padding: 10px 22px; border-radius: 25px; display: inline-block; margin: 5px; border: 1px solid rgba(255,255,255,0.3);}
+.btn {display: inline-block; padding: 15px 35px; background: white; color: #764ba2; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 25px; transition: 0.3s;}
+.btn:hover {transform: translateY(-3px);}
+
+/* Resume Section */
+.resume {background: #0a0a1a; padding: 100px 20px;}
+.container {max-width: 900px; margin: auto;}
+.resume h2 {font-size: 3em; text-align: center; background: linear-gradient(90deg, #667eea, #f093fb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 60px;}
+.resume-card {background: rgba(255,255,255,0.05); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; margin-bottom: 30px; transition: 0.3s;}
+.resume-card:hover {transform: translateX(10px); border-color: #667eea;}
+.resume-card h3 {font-size: 1.8em; color: #667eea; margin-bottom: 15px;}
+.resume-card h4 {font-size: 1.3em; color: #f093fb; margin-bottom: 8px;}
+.resume-card p {color: #b0b0c0; line-height: 1.8; margin-bottom: 8px;}
+.date {background: #667eea; padding: 5px 15px; border-radius: 15px; display: inline-block; font-size: 0.9em; margin-bottom: 15px;}
+.skills-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 20px;}
+.skill-item {background: rgba(102, 126, 234, 0.2); padding: 12px 20px; border-radius: 10px; border-left: 3px solid #667eea;}
+ul {margin-left: 20px; color: #b0b0c0; line-height: 1.8;}
+@media(max-width: 768px) {.hero h1 {font-size: 2.2em} .glass-card {padding: 40px 25px} img.profile {width: 150px; height: 150px}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class='hero'>
+<div class='glass-card'>
+<img src='https://roshan-portfolio-dgk.s3.us-east-1.amazonaws.com/roshan.jpg.jpeg' class='profile' alt='Roshan'>
+<h1>Roshan</h1>
+<p style='font-size: 1.4em; margin-bottom: 20px;'>AWS Cloud Developer | BS CS Student</p>
+<div>
+<span class='badge'>📍 Dera Ghazi Khan</span>
+<span class='badge'>🏫 MNSUET</span>
+<span class='badge'>📚 4th Semester</span>
+<span class='badge'>💻 BS Computer Science</span>
+</div>
+<a href='#resume' class='btn'>View Resume 📄</a>
+</div>
+</section>
+
+<!-- RESUME SECTION -->
+<section class='resume' id='resume'>
+<div class='container'>
+<h2>Resume</h2>
+
+<!-- EDUCATION -->
+<div class='resume-card'>
+<h3>🎓 Education</h3>
+<div class='date'>2024 - Present</div>
+<h4>Bachelor of Science in Computer Science</h4>
+<p><b>Muhammad Nawaz Sharif University of Engineering & Technology - MNSUET</b></p>
+<p>Current Semester: 4th Semester</p>
+<p>CGPA: 3.8/4.0 | Dean's List</p>
+<ul>
+<li>Relevant Courses: Data Structures, OOP, Database Systems, Web Development, Cloud Computing</li>
+<li>Member of Programming Society & AWS Cloud Club</li>
+</ul>
+</div>
+
+<!-- EXPERIENCE -->
+<div class='resume-card'>
+<h3>💼 Experience & Projects</h3>
+<div class='date'>2026 - Present</div>
+<h4>AWS Cloud Developer - Self Learning</h4>
+<p>Deploying applications on AWS EC2 with Nginx + PHP stack</p>
+<ul>
+<li>Launched personal portfolio website on AWS EC2 - Day 9.5 Challenge</li>
+<li>Configured Nginx web server, Security Groups, and Linux environment</li>
+<li>Implemented responsive UI with HTML5, CSS3, and PHP</li>
+</ul>
+
+<div class='date' style='margin-top: 25px;'>2025</div>
+<h4>Academic Projects</h4>
+<ul>
+<li><b>Student Management System</b> - C++ with File Handling</li>
+<li><b>Library Database</b> - MySQL + PHP CRUD Operations</li>
+<li><b>Weather App</b> - Python + API Integration</li>
+</ul>
+</div>
+
+<!-- SKILLS -->
+<div class='resume-card'>
+<h3>⚡ Technical Skills</h3>
+<div class='skills-grid'>
+<div class='skill-item'>☁️ AWS EC2, S3, VPC, IAM</div>
+<div class='skill-item'>🐧 Linux, Ubuntu, Bash</div>
+<div class='skill-item'>🌐 Nginx, Apache</div>
+<div class='skill-item'>💻 PHP, HTML5, CSS3</div>
+<div class='skill-item'>🐍 Python, C++</div>
+<div class='skill-item'>🗄️ MySQL, MongoDB</div>
+<div class='skill-item'>📦 Git & GitHub</div>
+<div class='skill-item'>🔧 VS Code, Docker</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class='resume-card'>
+<h3>📞 Contact</h3>
+<p><b>Location:</b> Dera Ghazi Khan, Punjab, Pakistan</p>
+<p><b>Email:</b> roshan.dgk@example.com</p>
+<p><b>GitHub:</b> github.com/roshan-dgk</p>
+<p><b>LinkedIn:</b> linkedin.com/in/roshan-dgk</p>
+</div>
+
+</div>
+</section>
+
+</body>
+</html>";
+?>
